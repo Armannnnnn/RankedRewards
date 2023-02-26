@@ -1,0 +1,61 @@
+dbName: "database_2" #SQLite database file name without the .db extension (in SkyWars plugin folder).
+tableName: "season_%previous_season%" #SQLite table name. %previous_season% refers to the previous season whose rewards are being claimed.
+currentSeason: 4 #Current ranked season, used for styling the GUI.
+guiTitle: "&3Claiming GUI" #Title of rewards claiming GUI.
+lores: #Lores and names for division items in GUI.
+   mastersName: "&2Masters Division [#1-#10]"
+   mastersLore:
+   - "&eTest"
+   - "&cLine 2"
+   mastersLoreUnavailable:
+   - "&cNot available yet"
+   diamondName: "&3Diamond Division [#11-#25]"
+   diamondLore:
+   - "&eTest"
+   - "&cLine 2"
+   diamondLoreUnavailable:
+   - "&cNot available yet"
+   goldName: "&6Gold Division [#26-#50]"
+   goldLore:
+   - "&eTest"
+   - "&cLine 2"
+   goldLoreUnavailable:
+   - "&cNot available yet"
+   ironName: "&fIron Division [#51-#75]"
+   ironLore:
+   - "&eTest"
+   - "&cLine 2"
+   ironLoreUnavailable:
+   - "&cNot available yet"
+   stoneName: "&7Stone Division [#76-#100]"
+   stoneLore:
+   - "&eTest"
+   - "&cLine 2"
+   stoneLoreUnavailable:
+   - "&cNot available yet"
+   woodName: "&eWood Division [#101+]"
+   woodLore:
+   - "&eTest"
+   - "&cLine 3"
+   woodLoreUnavailable:
+   - "&cNot available yet"
+   expiry: "&cExpires in 30 days." #Expiration message for claimable divisions (applies to all divisions).
+commands: #Commands ran when players claim their reward from the GUI.
+   masters:
+   - "lp user %player% permission set claimrewards.masters"
+   diamond:
+    - "lp user %player% permission set claimrewards.diamond"
+   gold: 
+   - "lp user %player% permission set claimrewards.gold"
+   iron:
+   - "lp user %player% permission set claimrewards.iron"
+   stone:
+   - "lp user %player% permission set claimrewards.stone"
+   wood:
+   - "lp user %player% permission set claimrewards.wood"
+messages:
+   noPerms: "&cYou do not have permission to run this command!"
+   noRewards: "&cYou do not have any rewards to claim!"
+   claimedRewards: "&aSuccessfully claimed your rewards!"
+   cannotClaim: "&cYou cannot claim this reward!"
+   alreadyClaimed: "&cYou have already claimed your rewards!"

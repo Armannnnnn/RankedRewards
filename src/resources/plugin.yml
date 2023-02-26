@@ -1,0 +1,12 @@
+name: ClaimRewards
+main: me.arman.claimrewards.Main
+version: 1.0
+description: RSW network reward claiming system.
+author: Arman
+prefix: ClaimRewards
+commands:
+    claimrewards:
+        description: Claim rewards based on division.
+permissions:
+    claimrewards.use:
+        description: Gives access to ClaimRewards commands.
